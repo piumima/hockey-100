@@ -10,7 +10,7 @@ var users = [];
 //global variable for team names
 var teams = ["senators", "oilers", "nordiques", "flames", "canucks", "canadiens", "mapleleafs", "jets"]
 
-app.use(express.static('public'));
+app.use(express.static('html'));
 
 //catch all requests and log them
 app.use('*', function(req, res, next){
@@ -52,11 +52,11 @@ app.post('/sendID', function(req,res){
 app.get('/getCardStats', function(req,res){
     var stats = fs.stat('./data/user.json', function(err){
         if(err) {
-            res.set({'Access-Control-Allow-Origin':"http://museumvx.dd:8083"});
+            res.set({'Access-Control-Allow-Origin':"http://www.jackieellis.ca"});
             res.send("false");
         }
         else {
-            res.set({'Access-Control-Allow-Origin':"http://museumvx.dd:8083"});
+            res.set({'Access-Control-Allow-Origin':"http://www.jackieellis.ca"});
             res.send("true");
         }
     });
