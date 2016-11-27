@@ -21,7 +21,7 @@ app.use('*', function(req, res, next){
 app.use(bodyParser.urlencoded({extended:false}));
 
 //handle requests to generate a user's card
-app.post('/getCardStats', function(req,res){
+app.post('/sendID', function(req,res){
     fs.createReadStream("./data/users.csv")
     .pipe(parse({delimiter: ','}))
     .on('data', function(csvrow) {
@@ -31,17 +31,35 @@ app.post('/getCardStats', function(req,res){
     })
     .on('end',function() {
         //send back data for the requested user
-        var result = users[req.body.id];
+        var id = req.body.id.charAt(0);
+        console.log(id);    
+        var result = users[parseInt(req.body.id)];
         if(result === undefined){
             console.log("User undefined");
             res.sendStatus(404);
         }
         else{
-            console.log(result)
-            res.send(result);          
+            console.log(result);
+            fs.writeFile('./data/user.json',JSON.stringify(result), function(err){
+                if (err) console.log("Couldn't write file");
+            });
+            res.end();
         }
     });
     
+});
+
+app.get('/getCardStats', function(req,res){
+    var stats = fs.stat('./data/user.json', function(err){
+        if(err) {
+            res.set({'Access-Control-Allow-Origin':"http://museumvx.dd:8083"});
+            res.send("false");
+        }
+        else {
+            res.set({'Access-Control-Allow-Origin':"http://museumvx.dd:8083"});
+            res.send("true");
+        }
+    });
 });
 
 

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $('#submit').click(function(){
         var id = $('#id').val();
         $.ajax({
