@@ -1,0 +1,16 @@
+{
+  "name": "hockey100",
+  "version": "1.0.0",
+  "description": "Interactive hockey exhibit experience for the Canadian Museum of History",
+  "main": "hockeyCard.js",
+  "scripts": {
+    "start": "node hockeyCard.js"
+  },
+  "author": "Team Puck",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "csv-parse": "^1.1.7",
+    "express": "^4.14.0"
+  }
+}
