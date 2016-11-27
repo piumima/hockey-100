@@ -1,0 +1,204 @@
+body {
+	width: 100%;
+}
+
+
+
+@font-face {
+    font-family: Varsity;
+    src: url(Fonts/Varsity.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: Magnolia;
+	src: url(Fonts/Magnolia_Script.otf) format("opentype");
+}
+
+@font-face {
+	font-family: VarsityTwo;
+	src: url(Fonts/varsity_regular.ttf) format("truetype");
+}
+
+p {
+	color:black;
+}
+
+.navbar-default {
+	background-color:white;
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+	border-color:white;
+}
+
+.navbar-left {
+	height:45px;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+
+h3 {
+	color:black !important;
+	font-family: VarsityTwo;
+	margin-top: 7px !important;
+}
+
+.navbar {
+	min-height:70px;
+}
+
+.navbar {
+	max-width:100%;
+}
+
+.navbar-header img {
+    max-height: 100%;
+    width: auto;
+}
+
+.navbar-default .navbar-text {
+	color:white;	
+}
+
+.navMenu {
+	background:transparent;
+	border:transparent;
+}
+
+.btn-default {
+	color:white;
+}
+
+.btn-default:hover {
+	background-color:#569ca7;
+	height:100%;
+}
+
+#home{
+
+	height:100%;
+
+	min-height: 100%;
+
+	background: url(Images/bg.jpg) 60% center center;
+
+	background:url('background.jpg') no-repeat center center;
+
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+
+	/* The Magic */
+	background-size:cover;
+
+}
+
+.mainText p {
+	color:black;
+}
+
+.orange {
+	background-color:#f15942;
+	width:100%;
+	height:60px;
+	display:inline-block;
+}
+
+.orange p {
+	text-align:center;
+    padding-top:2%;
+}
+
+.full-width {
+	width:100%;
+}
+
+.center {
+	text-align:center;
+}
+
+h1 {
+	font-family:Varsity;
+}
+
+.introSearch {
+	position:relative !important;
+	top:30%;
+	height:auto;
+	width:65%;
+	background-color:rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	display: block;
+}
+
+.middle {
+	display:block;
+	margin:auto auto;
+}
+
+.mrgn-bttm-md {
+	margin-bottom:15px;
+}
+
+.mrgn-tp-md{
+	margin-top:15px;
+}
+
+.pddng-bttm-md {
+	padding-bottom:15px;
+}
+
+.pddng-tp-md{
+	padding-top:15px;
+}
+
+.mainSearch {
+	width:50%;
+	margin:15px auto;
+}
+
+.hockeyCard {
+	width: auto;
+	height: 50%;
+	position:relative;
+	top:30%;
+	left:-30%;
+}
+
+.title {
+	width:35% !important;
+	margin-top:20px;
+	padding-left:10px;
+}
+
+.mLogo {
+	width:15% !important;
+	margin-top:20px;
+	float:right;
+}
+
+.touch {
+	position:absolute;
+	top:35%;
+	left:10%;
+}
+
+input {
+	margin-bottom:20px;
+}
+
+form {
+	text-align:center;
+}
+
+#card {
+	margin-top:110px;
+}
+
+.card {
+	width: 20%;
+	height: auto;
+}
+
+.middleC {
+	margin: auto auto;
+	display:block;
+	text-align:center;
+}
