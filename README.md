@@ -1,10 +1,13 @@
-Synopsis
+##Synopsis
 An interactive museum experience using nfc technology to celebrate
 100 years of hockey.
 
-Installation
+##Installation
 
-npm install
-npm start
+`npm install`
+
+`npm start`
 
 Navigate to localhost:2406/
+
+##Contributors
